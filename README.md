@@ -3,7 +3,7 @@
 My first personal project in Python, using `pygame` to create a pathfinding visualizer for `A*` and `Dijkstra's` algorithms.
 
 <p align="center">
-<a target="_blank" href="https://imageupload.io/PTVKVM57325NZFU"><img  src="https://imageupload.io/ib/fwRatgKEueNco1F_1695052130.png" alt="pathfinder app.PNG"/></a>
+<a target="_blank" href="https://imageupload.io/PTVKVM57325NZFU"><img  src="https://imageupload.io/ib/fwRatgKEueNco1F_1695052130.png" width="540" alt="pathfinder app.PNG"/></a>
 </p>
 
 ## main features
