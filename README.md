@@ -22,4 +22,4 @@ python main.py
 ```
 
 ## footnote
-Comments and feedback are very welcome!
+I hope to implement more algorithms in the program in the future. Comments and feedback are very welcome!
