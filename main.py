@@ -1,5 +1,4 @@
 import pygame
-import math
 from queue import PriorityQueue
 from utils import *
 
@@ -9,16 +8,6 @@ WIDTH = 600
 OFFSET = 125
 WIN = pygame.display.set_mode((WIDTH, WIDTH+OFFSET))
 pygame.display.set_caption("path visualizer")
-
-WHITE = (255, 255, 255)
-BLACK = (0, 0, 0)
-TEAL = (100, 204, 197)
-DARKGREEN = (23, 107, 135)
-ORANGE = (255, 165, 0)
-PURPLE = (237, 200, 255)
-YELLOW = (248, 255, 150)
-GREY = (200, 200, 200)
-DARKGREY = (100, 100, 100)
 
 class Grid:
     def __init__(self, row, col, width, total_rows):
@@ -87,9 +76,6 @@ class Grid:
 
         if self.col > 0 and not grid[self.row][self.col - 1].is_barrier(): # LEFT
             self.neighbors.append(grid[self.row][self.col - 1])
-
-    def __lt__(self, other):
-        return False
 
 def make_grid(rows, width):
     grids = []
@@ -301,7 +287,7 @@ def main(win, width):
                         spot.reset()
                         end = None
             
-            # start the program with A* algorithm
+            # start the program with A* algorithm on "SPACE"
             elif event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE and start and end: 
                     for row in grids:
                         for spot in row:
@@ -309,7 +295,7 @@ def main(win, width):
 
                     astar_algo(lambda: draw(win, grids, ROWS, width), grids, start, end)
 
-            # start the program with Dijkstra's algorithm        
+            # start the program with Dijkstra's algorithm on "q"    
             elif event.type == pygame.KEYDOWN and event.key == pygame.K_q and start and end:
                     for row in grids:
                         for spot in row:
