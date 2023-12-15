@@ -1,9 +1,9 @@
 # pathfinding-visualizer
 
-My first personal project in Python, using `pygame` to create a pathfinding visualizer for `A*` and `Dijkstra's` algorithms.
+My first personal project in Python, using `pygame` to perform pathfinding using `A*` and `Dijkstra's` algorithms and display visualizations.
 
 <p align="center">
-<a target="_blank" href="https://imageupload.io/PTVKVM57325NZFU"><img  src="https://imageupload.io/ib/fwRatgKEueNco1F_1695052130.png" width="540" alt="pathfinder app.PNG"/></a>
+<img  src="https://github.com/pearlpisut/pathfinding-visualizer/assets/82090378/d7305f85-96dd-4329-83e3-6235fea9a6ba" width="380" alt="pathfinder app.PNG"/>
 </p>
 
 ## main features
